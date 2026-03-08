@@ -2,6 +2,7 @@ from parse.book24 import book24_parse
 from parse.labirint import labirint_parse
 from parse.bookvoed import bookvoed_parse
 from threading import Thread
+>>>>>>> c8e6725 (Added three parser)
 import sqlite3
 import time
 CREATE_TABLE = """CREATE TABLE BOOK(
@@ -23,4 +24,5 @@ book24_parse(search, "BOOK")
 time.sleep(3)
 labirint_parse(search, "BOOK")
 time.sleep(3)
+bookvoed_parse(search, "BOOK")
 bookvoed_parse(search, "BOOK")
